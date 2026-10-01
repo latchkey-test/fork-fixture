@@ -5,3 +5,5 @@ A public Latchkey CI fixture repository for the fork-safety legs of latchkey-dev
 Enrolled on dev 2026-09-30.
 
 AF1 L7 non-fork leg 2026-10-01T01:58:23Z.
+
+AF7 L7 non-fork push 2026-10-01T20:46:20Z
