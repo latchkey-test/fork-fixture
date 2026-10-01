@@ -6,3 +6,5 @@ Enrolled on dev 2026-09-30.
 
 
 my test from this
+
+AF7 L10: own-fork push after a base workflow change (part of latchkey-dev/latchkey#1614)
