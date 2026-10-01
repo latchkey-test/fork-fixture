@@ -15,3 +15,5 @@ jobs:
     steps:
       - name: say where it ran
         run: echo "af1-fork-fixture repository=$LATCHKEY_CI_REPOSITORY sha=$LATCHKEY_CI_SHA fork=$LATCHKEY_CI_FORK run=$LATCHKEY_CI_RUN_ID"
+      - name: base-l10
+        run: echo base-l10-marker-2026-10-01
