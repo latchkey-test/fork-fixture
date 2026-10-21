@@ -1,0 +1,12 @@
+on:
+  push:
+    branches: [leg/2869p3-d-1792573886, main]
+jobs:
+  ff:
+    runs-on: small
+    timeout-minutes: 5
+    steps:
+      - name: read the fast-forward secret
+        run: test -n "$F"
+        env:
+          F: ${{ secrets.LEG_P3_FF_1792573886 }}
