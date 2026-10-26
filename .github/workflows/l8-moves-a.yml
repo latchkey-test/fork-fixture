@@ -1,0 +1,10 @@
+name: L8 moves A
+on:
+  push:
+    branches: [main]
+jobs:
+  moves-a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: moves a
+        run: echo "l8 moves a, replaced by .latchkey/workflows/fixture.yml"

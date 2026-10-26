@@ -1,0 +1,10 @@
+name: L8 stays
+on:
+  push:
+    branches: [main]
+jobs:
+  stays:
+    runs-on: ubuntu-latest
+    steps:
+      - name: stays
+        run: echo "l8 stays on GitHub Actions, named by no answer"
