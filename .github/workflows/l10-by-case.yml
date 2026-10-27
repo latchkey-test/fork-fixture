@@ -1,0 +1,11 @@
+name: L10 by case
+on:
+  workflow_run:
+    workflows: ["l10 named"]
+    types: [completed]
+jobs:
+  by-case:
+    runs-on: ubuntu-latest
+    steps:
+      - name: by-case
+        run: echo "L10 by case follows l10 named"

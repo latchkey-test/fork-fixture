@@ -1,0 +1,11 @@
+name: L10 by file
+on:
+  workflow_run:
+    workflows: ["l10-moves.yml"]
+    types: [completed]
+jobs:
+  by-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: by-file
+        run: echo "L10 by file follows l10-moves.yml"
