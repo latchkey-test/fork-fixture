@@ -1,0 +1,11 @@
+name: L9 follows by path
+on:
+  workflow_run:
+    workflows: [".github/workflows/l9-moves.yml"]
+    types: [completed]
+jobs:
+  follows:
+    runs-on: ubuntu-latest
+    steps:
+      - name: follows
+        run: echo "l9 follows L9 moves"

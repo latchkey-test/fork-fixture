@@ -1,0 +1,11 @@
+name: L9 follows
+on:
+  workflow_run:
+    workflows: ["L9 moves"]
+    types: [completed]
+jobs:
+  follows:
+    runs-on: ubuntu-latest
+    steps:
+      - name: follows
+        run: echo "l9 follows L9 moves"
