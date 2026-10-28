@@ -1,0 +1,10 @@
+name: A3461 stays
+on:
+  push:
+    branches: [main]
+jobs:
+  stays:
+    runs-on: ubuntu-latest
+    steps:
+      - name: stays
+        run: echo "a3461 stays on push to main"

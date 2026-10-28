@@ -1,0 +1,10 @@
+name: A3461 moves-a
+on:
+  push:
+    branches: [main]
+jobs:
+  moves-a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: moves-a
+        run: echo "a3461 moves-a on push to main"
