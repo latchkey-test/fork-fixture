@@ -7,3 +7,5 @@ Enrolled on dev 2026-09-30.
 AF1 L7 non-fork leg 2026-10-01T01:58:23Z.
 
 AF7 L7 non-fork push 2026-10-01T20:46:20Z
+
+leg #3461 A: a commit after the moved-sources answer.
