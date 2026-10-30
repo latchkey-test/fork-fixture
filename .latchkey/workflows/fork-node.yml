@@ -1,0 +1,17 @@
+name: setup-node fork leg
+on:
+  pull_request:
+jobs:
+  node101:
+    runs-on: small
+    steps:
+      - uses: latchkey/setup-node@1.0.1
+        with:
+          node-version: "24"
+      - run: node --version && command -v node
+  node100:
+    runs-on: small
+    steps:
+      - uses: latchkey/setup-node@1.0.0
+        with:
+          node-version: "24"
