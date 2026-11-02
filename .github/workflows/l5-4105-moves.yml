@@ -1,9 +1,0 @@
-name: l5-4105-moves
-on:
-  push:
-    branches: [main]
-jobs:
-  moves:
-    steps:
-      - name: never starts
-        run: echo "this job names no runner, so GitHub cannot start the run"
