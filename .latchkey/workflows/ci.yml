@@ -1,7 +1,5 @@
 on:
   pull_request:
-  merge_group:
-    branches: [main]
 jobs:
   test:
     runs-on: small
