@@ -1,0 +1,16 @@
+# Merge queue fixture: runs on a merge group for main and on a pull request to main.
+on:
+  merge_group:
+    branches: [main]
+    types: [checks_requested]
+  pull_request:
+    branches: [main]
+jobs:
+  queue-check:
+    runs-on: small
+    timeout-minutes: 5
+    steps:
+      - name: say what it built
+        run: echo "mq-leg event=$LATCHKEY_CI_EVENT_CLASS sha=$LATCHKEY_CI_SHA ref=$LATCHKEY_CI_REF base=$LATCHKEY_CI_BASE_REF run=$LATCHKEY_CI_RUN_ID"
+      - name: hold long enough for a dequeue
+        run: sleep 60
